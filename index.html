@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Прогноз погоды</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Прогноз погоды</h1>
+    <button id="refreshBtn">Обновить</button>
+</header>
+
+<main>
+    <section id="controls">
+        <div class="input-group">
+            <input type="text" id="cityInput" placeholder="Введите город">
+            <div id="suggestions"></div>
+            <button id="addCityBtn">Добавить город</button>
+            <div class="error" id="cityError"></div>
+        </div>
+    </section>
+
+    <section id="status">
+        <div id="loading" class="hidden">Загрузка данных...</div>
+        <div id="error" class="hidden"></div>
+    </section>
+
+    <section id="cities"></section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
